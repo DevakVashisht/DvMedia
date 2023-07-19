@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+    text-decoration: none;
+}
+
+nav {
+    overflow: hidden;
+}
+
+.nav {
+    justify-content: center;
+}
+
+.bg-nav {
+    background-color: #e8e5e480;
+    border-radius: 400px;
+    opacity: 1;
+}
+
+.nav-ul {
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    place-content: center flex-end;
+    padding-top: 0;
+    font-family: 'Red Hat Mono';
+    text-align: center;
+}
+
+.home {
+    background-color: white;
+    border-radius: 90px;
+    padding:0rem 1rem;
+}
+
+.nav-li {
+    list-style-type: none;
+    margin: 0.8rem 1.5rem;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: #ffff;
+    border-radius: 1rem;
+}
+
+.main-title {
+   margin: 6rem;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-size: 64px;
+    text-align: center;
+}
+
+.flex-expert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+p {
+    z-index: 0;
+    margin: 0.5rem;
+}
+
+.exp {
+    border-radius: 90px;
+}
+
+.editing {
+    padding: 0.5rem 1rem;
+    background-color: rgba(232, 229, 228, 0.5);
+    border-radius: 90px;
+}
+
+.smma {
+    padding: 0.5rem 1rem;
+    background-color: rgba(232, 229, 228, 0.5);
+    border-radius: 90px;
+}
+
+.programming {
+    padding: 0.5rem 1rem;
+    background-color: rgba(232, 229, 228, 0.5);
+    border-radius: 90px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.video {
+    height: 250px;
+    width: 350px;
+    border-radius: 5px;
+    border: 5px solid #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+video:hover {
+    transform: scale(1.1);
+}
+
+.popup-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.popup-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+.popup-video span {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: inherit;
+    cursor: pointer;
+}
+
+.ending{
+    padding: 10rem;
+}
+
+.end-h1 {
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.end-h2 {
+    color: #7f7f7f;
+    font-size: 400%;
+}
+
+footer  {
+    font-size: 200%;
+    font-family: 'Red Hat mono';
+}
+
+.social {
+    text-align: end;
+    text-decoration: none;
+}
+
+
+.copy {
+    margin-top: 15%; 
+}
+
+.sticky {
+    position: fixed;
+    z-index: 2;
+}
+
+@media (max-width:768px) {
+    .popup-video video {
+        width: 95%;
+    }
+}
+
+@media (max-width:412px){
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .h1-main{
+        padding-top: 55px;
+    }
+    .end-h2 {
+        font-size: 50px;
+    }
+    .end-h1 {
+        font-size: 50px;
+    }
+}
